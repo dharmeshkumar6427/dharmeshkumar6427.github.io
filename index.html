@@ -1,1 +1,98 @@
-check
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Scientific Calculator</title>
+  <style>
+    .calculator {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin: 50px auto;
+  width: 500px;
+  text-align: center;
+}
+
+#display {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #141313;
+  border-radius: 5px;
+}
+
+table {
+  width: 100%;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 
+}
+button {
+  background-color: #05f605; 
+  color: rgb(9, 9, 9);
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.5s, transform 0.5s; 
+}
+
+button:hover {
+  background-color: #008CBA; 
+  transform: scale(1.2); 
+}
+body{
+    background-image:url(https://png.pngtree.com/thumb_back/fh260/background/20220511/pngtree-vector-background-of-scientific-and-technological-system-for-calculating-complex-data-image_1298991.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" id="display" readonly>
+    <table>
+      <tr>
+        <td><button onclick="clearDisplay()">C</button></td>
+        <td><button onclick="backspace()">&larr;</button></td>
+        <td><button onclick="insert('^')">^</button></td>
+        <td><button onclick="insert('(')">(</button></td>
+        <td><button onclick="insert(')')">)</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="insert('7')">7</button></td>
+        <td><button onclick="insert('8')">8</button></td>
+        <td><button onclick="insert('9')">9</button></td>
+        <td><button onclick="insert('/')">/</button></td>
+        <td><button onclick="insert('*')">*</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="insert('4')">4</button></td>
+        <td><button onclick="insert('5')">5</button></td>
+        <td><button onclick="insert('6')">6</button></td>
+        <td><button onclick="insert('-')">-</button></td>
+        <td><button onclick="insert('+')">+</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="insert('1')">1</button></td>
+        <td><button onclick="insert('2')">2</button></td>
+        <td><button onclick="insert('3')">3</button></td>
+        <td><button onclick="insert('sin(')">sin</button></td>
+        <td><button onclick="insert('cos(')">cos</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="insert('0')">0</button></td>
+        <td><button onclick="insert('.')">.</button></td>
+        <td><button onclick="insert('Math.PI')">π</button></td>
+        <td><button onclick="insert('tan(')">tan</button></td>
+        <td><button onclick="calculate()">=</button></td>
+      </tr>
+    </table>
+  </div>
+  <script src="scrippt.js"></script>
+</body>
+</html>
